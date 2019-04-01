@@ -1,6 +1,8 @@
 ---
+layout: article
 title: CoreDNS Overview
 tags: dns CoreDNS
+key: coredns-overview
 ---
 
 介绍CoreDNS的框架和主体逻辑。

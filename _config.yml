@@ -20,9 +20,9 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://ckchang.cn # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Curtis Blog. # Your Site Title
+title   : Curtis Blog # Your Site Title
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  愿无岁月可回头。
 
 
 ## => Language and Timezone
@@ -49,7 +49,7 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : https://github.com/ckcd # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -78,7 +78,7 @@ license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4
 
 ## TOC
 toc:
-  selectors: # "h1,h2,h3" (default)
+  selectors: "h1,h2,h3,h4,h5,h6" # "h1,h2,h3" (default)
 
 
 ## => Markdown Enhancements
@@ -127,12 +127,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : e87b8051e76d640ce286 # GitHub Application Client ID
-    clientSecret: 3c62c39f4a3aeeaf82f9ac7a3c98a12b052b04e7 # GitHub Application Client Secret
-    repository  : ckcd.github.io # GitHub repo
-    owner       : ckcd # GitHub repo owner
-    admin: ckcd # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+    clientID    : "e87b8051e76d640ce286"
+    clientSecret: "3c62c39f4a3aeeaf82f9ac7a3c98a12b052b04e7"
+    repository  : "ckcd.github.io"
+    owner       : "ckcd"
+    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      - "ckcd"
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -208,11 +208,11 @@ defaults:
     values:
       layout: article
       sharing: true
-      license: true
+      license: false
       aside:
         toc: true
       show_edit_on_github: true
-      show_subscribe: true
+      show_subscribe: false
       pageview: true
 
 
